@@ -133,7 +133,7 @@ mv data.prefix.counts.valid data.prefix.counts.valid.old
 awk -F"[|\t]" 'NR==FNR { lines[$2]=1; next } !($2 in lines)' <(cat data.prefix.counts.train) data.prefix.counts.valid.old \
 > data.prefix.counts.valid
 
-# test test inputs that are in the train
+# remove test inputs that are in the train
 mv data.prefix.counts.test data.prefix.counts.test.old
 awk -F"[|\t]" 'NR==FNR { lines[$2]=1; next } !($2 in lines)' <(cat data.prefix.counts.train) data.prefix.counts.test.old \
 > data.prefix.counts.test

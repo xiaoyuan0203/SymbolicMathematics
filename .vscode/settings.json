@@ -1,0 +1,12 @@
+{
+    "files.watcherExclude": {
+        "**/dumped/**": true
+    },
+    "sync-rsync.exclude": [
+        "dumped/",
+        "*.pth",
+        "*.tar.gz",
+        "**/__pycache__/**"
+    ],
+    "sync-rsync.remote": "root@i-2.gpushare.com:/root/SymbolicMathematics"
+}

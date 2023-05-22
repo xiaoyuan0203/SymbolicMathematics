@@ -126,5 +126,6 @@ dmypy.json
 # tools, data, and dumped models
 # /tools
 /data
-/dumped
-.vscode
+dumped/
+*.pth
+*.tar.gz
